@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+
+  table {
+    width: auto;
+    border-spacing: 0 8px;
+    text-align: center;
+
+    thead {
+      font-size: 18px;
+    }
+
+    .th_thead {
+      width: 210px;
+      text-align: center;
+    }
+
+    td, th {
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:hover {
+      background-color: #bae5f5;
+      cursor: pointer;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e9f3fa;
+
+      &:hover {
+        background-color: #bae5f5;
+      }
+    }
+  }
+}
+
+.container_search_and_create {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.search {
+  display: flex;
+  width: 250px;
+  align-items: center;
+
+  .iconSearch {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}

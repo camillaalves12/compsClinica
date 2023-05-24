@@ -10,6 +10,11 @@ const GlobalStyles = createGlobalStyle`
   #root, body {
     font: 16px 'Roboto', sans-serif;
   }
+
+  span {
+    margin: 0;
+    padding: 0;
+}
 `;
 
 export default GlobalStyles;
