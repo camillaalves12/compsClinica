@@ -1,0 +1,27 @@
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.lock {
+   color:#292558;
+   width: 4rem;
+   height: 4rem;
+   margin-bottom: 2rem;
+}
+.section {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   background: #cdcdcd;
+   padding: 3rem;
+   border-radius: 24px;
+   align-items: center;
+}
+
+.input {
+   width: 300px;
+   color: #4c4747;
+}
