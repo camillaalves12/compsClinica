@@ -1,17 +1,26 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   margin: 0 auto;
+  width: 160vh;
+  
+  .divTable {
+    overflow: auto;
+    height: 25rem;
+  }
 
-  table {
+  .table {
     width: auto;
     border-spacing: 0 8px;
     text-align: center;
-
+    
     thead {
+      background-color: #cdcdcd;
       font-size: 18px;
-    }
+      position: sticky; /* Adicione posição sticky ao cabeçalho */
+      top: -1px; /* Defina o deslocamento negativo para ficar imediatamente acima da div.container */
+      z-index: 1; /* Ajuste o valor de z-index para garantir que o cabeçalho fique acima do conteúdo */
+        }
 
     .th_thead {
       width: 210px;

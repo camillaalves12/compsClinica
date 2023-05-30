@@ -1,1 +1,1 @@
-import Forms './Forms';
+import Forms from './Forms'
