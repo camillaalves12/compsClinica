@@ -5,11 +5,10 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  
 }
 
 .containerForm {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   background: #cdcdcd;
@@ -17,11 +16,22 @@
   border-radius: 24px;
 }
 
+.doctor {
+  display: flex;
+  gap: 1rem;
+
+  .inputDoctor {
+    width: 210px;
+  }
+  .inputDoctorEspc {
+    width: 249px;
+  }
+}
+
 .money {
   display: flex;
   gap: 2rem;
   margin-bottom: 1rem;
-
 }
 
 .inputMoney::placeholder {

@@ -22,14 +22,14 @@ export function Header(){
               <Nav.Link href="#action1">Consultas</Nav.Link>
               <Nav.Link href="#action2">Painel de Administrativo</Nav.Link>
             </Nav>
-
-          </Navbar.Collapse>
           <Nav className={S.logout}>
             <Nav.Link className={S.Username}>Olá, fulana</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               <HiOutlineLogout className={S.iconLogout}/>
             </Nav.Link>
           </Nav>
+          </Navbar.Collapse>
+
         </Container>
       </Navbar>
       </div>

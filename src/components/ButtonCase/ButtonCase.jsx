@@ -12,7 +12,7 @@ function ButtonCase() {
   return (
     <>
     <div className={S.aa}>
-      <Button variant="primary" onClick={handleShow} className={S.buttonCase}>
+      <Button variant="primary" onClick={handleShow} className={S.buttonCase} type='reset'>
         Cadastra nova consulta
       </Button>
 
