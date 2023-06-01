@@ -3,10 +3,25 @@
    flex-direction: column;
    height: 100vh;
 
-   .table {
+   .dashboard {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 90vh;
+      gap: 2rem;
+   }
+
+   .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+   }
+   .dashs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
    }
 }

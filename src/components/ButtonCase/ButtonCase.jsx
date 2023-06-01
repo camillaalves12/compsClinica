@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import S from './styles.module.scss'
 
-function ButtonCase() {
+function ButtonCase(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,12 +13,12 @@ function ButtonCase() {
     <>
     <div className={S.aa}>
       <Button variant="primary" onClick={handleShow} className={S.buttonCase} type='reset'>
-        Cadastra nova consulta
+        {props.nameBtn}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Consulta Cadastrada!!</Modal.Title>
+          <Modal.Title> {props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>Pode prosseguir para o painel de consultas.</Modal.Body>
         

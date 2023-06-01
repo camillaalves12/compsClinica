@@ -4,7 +4,6 @@ import S from './styles.module.scss';
 
 export function Card({title, money}){
     return(
-        <div className={S.aaa}>
         <div className={S.card}>
             <div>
                 <TbCurrencyReal className={S.iconReal}/> 
@@ -14,8 +13,6 @@ export function Card({title, money}){
                 <span className={S.description_money}><TbCurrencyReal className={S.iconRealDescription}/> { money }</span>
             </div>
         </div>
-        </div>
-
     )
 
 }

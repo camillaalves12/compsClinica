@@ -1,0 +1,12 @@
+.pageInitial {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+
+   .table {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+   }
+}

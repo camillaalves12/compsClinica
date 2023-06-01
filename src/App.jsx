@@ -7,6 +7,8 @@
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { Initial } from './pages/Initial/Initial';
 import { CreateConsult } from './pages/CreateConsult/CreateConsult';
+import { CreateExam } from './pages/CreateExam/CreateExam';
+import { Consults } from './pages/Consults/Consults';
 
 import './App.scss';
 
@@ -26,6 +28,8 @@ function App() {
         <Route exact path='/' element={<LoginPage/>}/>
         <Route exact path='/initial' element={<Initial/>}/>
         <Route exact path='/create_consult' element={<CreateConsult/>}/>
+        <Route exact path='/create_exam' element={<CreateExam/>}/>
+        <Route exact path='/consults' element={<Consults/>}/>
       </Routes>
     </Router>
     

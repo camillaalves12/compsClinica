@@ -23,7 +23,7 @@ export function Table() {
          <Link to='/create_consult'>
           <Button  variant="primary" className={S.input}>+ Criar nova consulta</Button>
          </Link>
-         <Link to='/create_consult'>
+         <Link to='/create_exam'>
           <Button  variant="primary" className={S.input} style={{margin:'5px', background:'#fff', color:'#0d6efd'}}>+ Criar novo exame</Button>
          </Link>
          </div>

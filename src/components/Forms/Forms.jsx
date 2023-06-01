@@ -6,8 +6,9 @@ import Form from 'react-bootstrap/Form';
 import ButtonCase from '../ButtonCase/ButtonCase'
 
 
-export function Forms() {
+export function Forms(props) {
    return(
+
     <Form className={S.container}>
       
       <div className={S.containerForm}>
@@ -22,20 +23,20 @@ export function Forms() {
 
       <div className={S.doctor}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Profissional:</Form.Label>
+        <Form.Label>{props.labelProfessional}</Form.Label>
         <Form.Control 
         className={S.inputDoctor} 
         type="text" 
-        placeholder="Digite o nome do médico"
+        placeholder={props.placeholderDoctor}
         style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
       </Form.Group>
       
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Especialidade do Médico:</Form.Label>
+        <Form.Label>{ props.nameEspecialty }</Form.Label>
         <Form.Control 
         className={S.inputDoctorEspc} 
         type="text" 
-        placeholder="Digite a especiliade do médico"
+        placeholder={props.placeholderEspecialty}
         style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
       </Form.Group>
       </div>
@@ -66,14 +67,9 @@ export function Forms() {
                 </Form.Select>
          </Form.Group>
       </div>
-      
-      {/* <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Digite a data da consulta</Form.Label>
-        <Form.Control type="date" placeholder="Digite o nome e sobrenome do paciente" />
-      </Form.Group>
-      */}
-      <ButtonCase />
-
+    
+      <ButtonCase nameBtn='Cadastrar'
+      title='Consulta Cadastrada' />
       </div>
       
     </Form>
