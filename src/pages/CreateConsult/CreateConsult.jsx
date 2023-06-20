@@ -11,11 +11,9 @@ export function CreateConsult() {
       <div className={S.pageCreateConsult}>
       <div className={S.forms}>
          <Forms
+         title='Criar Consulta'
          labelProfessional='Médico:'
-         placeholderDoctor='Digite o nome do Médico'
          nameEspecialty='Especialidade do Médico:'
-         placeholderEspecialty='Digite a especialidade do médico'
-
          />
 
       </div>

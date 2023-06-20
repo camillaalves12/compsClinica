@@ -9,6 +9,8 @@ import { Initial } from './pages/Initial/Initial';
 import { CreateConsult } from './pages/CreateConsult/CreateConsult';
 import { CreateExam } from './pages/CreateExam/CreateExam';
 import { Consults } from './pages/Consults/Consults';
+import { PageRegisterPatient } from './pages/PageRegisterPatient/PageRegisterPatient';
+import { PageSearchPatient } from './pages/PageSearchPatient/PageSearchPatient';
 
 import './App.scss';
 
@@ -30,6 +32,8 @@ function App() {
         <Route exact path='/create_consult' element={<CreateConsult/>}/>
         <Route exact path='/create_exam' element={<CreateExam/>}/>
         <Route exact path='/consults' element={<Consults/>}/>
+        <Route exact path='/register_patient' element={<PageRegisterPatient/>}/>
+        <Route exact path='/search_patient' element={<PageSearchPatient/>}/>
       </Routes>
     </Router>
     

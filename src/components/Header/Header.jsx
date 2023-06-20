@@ -4,14 +4,15 @@ import { HiOutlineLogout } from 'react-icons/hi';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 export function Header(){
 
     return (
       <div className={S.navBar}>
-      <Navbar bg="light" expand="lg" className={S.navBarItens}>
+      <Navbar style={{background:'#e0f1e0'}} expand="lg" className={S.navBarItens}>
         <Container fluid >
-          <Navbar.Brand href="#">Clínica tal</Navbar.Brand>
+          <Navbar.Brand>Clínica tal</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -19,8 +20,12 @@ export function Header(){
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Consultas</Nav.Link>
-              <Nav.Link href="#action2">Painel de Administrativo</Nav.Link>
+              <Nav.Link as={Link} to='/initial'>Painel de Administrativo</Nav.Link>
+              <Nav.Link as={Link} to='/consults'>Consultas</Nav.Link>
+              <Nav.Link as={Link} to='/create_consult'>Criar consultas</Nav.Link>
+              <Nav.Link as={Link} to='/create_exam'>Criar exames</Nav.Link>
+              <Nav.Link as={Link} to='/register_patient'>Cadastrar paciente</Nav.Link>
+              <Nav.Link as={Link} to='/search_patient'>Procurar paciente</Nav.Link>
             </Nav>
           <Nav className={S.logout}>
             <Nav.Link className={S.Username}>Olá, fulana</Nav.Link>
@@ -29,7 +34,6 @@ export function Header(){
             </Nav.Link>
           </Nav>
           </Navbar.Collapse>
-
         </Container>
       </Navbar>
       </div>

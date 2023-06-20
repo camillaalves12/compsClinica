@@ -10,12 +10,11 @@ export function CreateExam() {
       <div className={S.pageCreateConsult}>
       <div className={S.forms}>
          <Forms
+            title='Criar exame'
             labelProfessional='Profissional:'
             nameEspecialty='Tipo de exame:'
-            placeholderEspecialty=''
- />
+         />
       </div>
-
       </div>
       </>
    )

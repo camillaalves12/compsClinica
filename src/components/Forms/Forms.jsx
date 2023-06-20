@@ -10,14 +10,13 @@ export function Forms(props) {
    return(
 
     <Form className={S.container}>
-      
       <div className={S.containerForm}>
+      <h2 style={{ marginBottom:'1.5rem'}}>{props.title}</h2>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Paciente:</Form.Label>
         <Form.Control 
         className={S.input} 
         type="text" 
-        placeholder="Digite o nome e sobrenome do paciente"
         style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
       </Form.Group>
 
@@ -27,7 +26,6 @@ export function Forms(props) {
         <Form.Control 
         className={S.inputDoctor} 
         type="text" 
-        placeholder={props.placeholderDoctor}
         style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
       </Form.Group>
       
@@ -36,7 +34,6 @@ export function Forms(props) {
         <Form.Control 
         className={S.inputDoctorEspc} 
         type="text" 
-        placeholder={props.placeholderEspecialty}
         style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
       </Form.Group>
       </div>
@@ -49,7 +46,6 @@ export function Forms(props) {
             <Form.Label>Valor:</Form.Label>
             <Form.Control 
             type="medico" 
-            placeholder="Digite o valor da consulta" 
             className={S.inputMoney}
             style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }}/>
           </Form.Group>
@@ -69,7 +65,7 @@ export function Forms(props) {
       </div>
     
       <ButtonCase nameBtn='Cadastrar'
-      title='Consulta Cadastrada' />
+      title='Consulta Cadastrada'  className={S.btnCase}/>
       </div>
       
     </Form>
