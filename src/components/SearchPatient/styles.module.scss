@@ -8,7 +8,7 @@
  }
  
  .containerForm {
-   width: 800px;
+   width: 600px;
    display: flex;
    flex-direction: column;
    background: #fff;
@@ -22,16 +22,17 @@
    display: flex;
    gap: 1rem;
  
-   .inputDoctor {
-     width: 328px;
-   }
-   .inputDoctorEspc {
-      width: 328px;
-   }
+  .inputDoctor {
+    width: 240px;
+  }
+  .inputDoctorEspc {
+    width: 265px;
+  }
  }
 
  .btnSearch {
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-top: 1rem;
  }

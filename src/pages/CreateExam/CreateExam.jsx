@@ -13,6 +13,7 @@ export function CreateExam() {
             title='Criar exame'
             labelProfessional='Profissional:'
             nameEspecialty='Tipo de exame:'
+            textlastbtn='Agendar exame'
          />
       </div>
       </div>

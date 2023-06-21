@@ -72,12 +72,12 @@ export function RegisterPatient(props) {
                 <Form.Control
                 required
                 className={S.inputDoctorEspc} 
-                style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
+                style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd', marginBottom:'1rem' }} />
             </Form.Group>
 
             
             <ButtonCase nameBtn='Cadastrar'
-            title='Paciente Cadastrado!!' />
+            title='Paciente Cadastrado!!'/>
             </div>
         </Form>
         

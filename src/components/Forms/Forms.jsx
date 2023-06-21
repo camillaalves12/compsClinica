@@ -66,8 +66,11 @@ export function Forms(props) {
     
       <ButtonCase nameBtn='Cadastrar'
       title='Consulta Cadastrada'  className={S.btnCase}/>
-      </div>
       
+      <Form.Text style={{textAlign:'center', color:'red'}}>
+            {props.textlastbtn}
+        </Form.Text>
+      </div>
     </Form>
   );
 }

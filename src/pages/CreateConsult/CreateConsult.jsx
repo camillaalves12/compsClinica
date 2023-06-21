@@ -14,6 +14,7 @@ export function CreateConsult() {
          title='Criar Consulta'
          labelProfessional='Médico:'
          nameEspecialty='Especialidade do Médico:'
+         textlastbtn='Agendar consulta'
          />
 
       </div>
