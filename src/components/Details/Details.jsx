@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 import { BiSearch } from 'react-icons/bi';
 import { Form, Button } from 'react-bootstrap';
 import { Header } from '../Header/Header';
-import { BiInfoCircle } from "react-icons/bi";
 
 
 export function Details() {
     const dados = [
         { index: 1, paciente: 'João', profissional: 'Marcos', exame:'USG', tipo_de_exame: 'USG DA COXA', valor: 150, forma_de_pagamento: 'pix', data:20 },
         { index: 2, paciente: 'João', profissional: 'Marcos', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
-        { index: 3, paciente: 'Maria', profissional: 'Gisele', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
-        { index: 4, paciente: 'Pedro', profissional: 'Antonio', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
-        { index: 5, paciente: 'Pedro', profissional: 'Antonio', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
-        { index: 6, paciente: 'Pedro', profissional: 'Antonio', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
+        { index: 3, paciente: 'João', profissional: 'Gisele', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
+        { index: 4, paciente: 'João', profissional: 'Antonio', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
+        { index: 5, paciente: 'João', profissional: 'Antonio', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
+        { index: 6, paciente: 'João', profissional: 'Antonio', exame:'Obtetra', tipo_de_exame: 'blabkabka', valor: 150, forma_de_pagamento: 'pix', data:23 },
       ];
+
       const Tabela = ({ dados }) => {
           return (
             <table className={S.table}>
@@ -28,7 +28,6 @@ export function Details() {
                   <th className={S.th_thead}>Valor</th>
                   <th className={S.th_thead}>Forma de pagamento</th>
                   <th className={S.th_thead}>Data</th>
-                  <th className={S.th_thead}>Detalhes do Paciente</th>
                 </tr>
               </thead>
               <tbody>
@@ -41,7 +40,6 @@ export function Details() {
                     <td>{item.valor}</td>
                     <td>{item.forma_de_pagamento}</td>
                     <td>{item.data}</td>
-                    <td><BiInfoCircle className={S.iconInfo}/></td>
                   </tr>
                 ))}
               </tbody>
@@ -61,7 +59,7 @@ export function Details() {
             })
           ).isRequired,
         };
-      
+
         return (
           <>
           <Header />
@@ -94,7 +92,30 @@ export function Details() {
                 {dados.length > 0 ? (
                   <Tabela dados={dados} />
                 ) : (
-                  <p>Nenhum dado disponível.</p>
+                              <table className={S.table}>
+            <thead>
+              <tr>
+                <th className={S.th_thead}>Paciente</th>
+                <th className={S.th_thead}>Profissional</th>
+                <th className={S.th_thead}>Especialidade</th>
+                <th className={S.th_thead}>Valor</th>
+                <th className={S.th_thead}>Forma de pagamento</th>
+                <th className={S.th_thead}>Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              {dados.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.paciente}</td>
+                  <td>{item.profissional}</td>
+                  <td>{item.especialidade}</td>
+                  <td>{item.valor}</td>
+                  <td>{item.forma_de_pagamento}</td>
+                  <td>{item.data}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
                 )}
               </div>
             </div>

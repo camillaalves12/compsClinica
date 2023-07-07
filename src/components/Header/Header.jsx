@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import NavDropdown from 'react-bootstrap/NavDropdown'
 
 export function Header(){
 
@@ -20,13 +21,15 @@ export function Header(){
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link as={Link} to='/initial'>Painel de Administrativo</Nav.Link>
-              <Nav.Link as={Link} to='/procedures'>Procedimentos</Nav.Link>
-              <Nav.Link as={Link} to='/create_consult'>Criar consultas</Nav.Link>
-              <Nav.Link as={Link} to='/create_exam'>Criar exame</Nav.Link>
+              <Nav.Link as={Link} to='/initial'>Painel Administrativo</Nav.Link>
+              <Nav.Link as={Link} to='/procedures'>Resumo Diário</Nav.Link>
+              <NavDropdown title="Procedimentos">
+                <NavDropdown.Item as={Link} to='/create_consult'>Criar consultas</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/create_exam'>Criar exame</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/scheduling_consult'>Agendamento</NavDropdown.Item>
+            </NavDropdown>
               <Nav.Link as={Link} to='/register_patient'>Cadastrar paciente</Nav.Link>
               <Nav.Link as={Link} to='/search_patient'>Procurar paciente</Nav.Link>
-              <Nav.Link as={Link} to='/scheduling_consult'>Agendamento</Nav.Link>
             </Nav>
           <Nav className={S.logout}>
             <Nav.Link className={S.Username}>Olá, fulana</Nav.Link>
