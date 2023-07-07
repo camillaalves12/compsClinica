@@ -5,7 +5,6 @@ import Form from 'react-bootstrap/Form';
 
 import ButtonCase from '../ButtonCase/ButtonCase'
 
-
 export function Forms(props) {
    return(
 
@@ -37,8 +36,6 @@ export function Forms(props) {
         style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
       </Form.Group>
       </div>
-
-
 
       <div className={S.money}>
 

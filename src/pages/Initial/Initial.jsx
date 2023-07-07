@@ -14,15 +14,15 @@ export function Initial() {
       <div className={S.dashboard}>
             <div className={S.cards}>
                <Card 
-               title='Ganho Diário'
+               title='Saldo Diário'
                money= '250' 
                />
                <Card 
-               title='Ganho Semanal'
+               title='Saldo Semanal'
                money= '550' 
                />
                <Card 
-               title='Ganho Mensal'
+               title='Saldo Mensal'
                money= '1250' 
                />
             </div>

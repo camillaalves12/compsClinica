@@ -8,12 +8,12 @@ import S from './styles.module.scss';
 export function Table() {
 
    const dados = [
-      { index: 1, paciente: 'João', profissional: 'Marcos', especialidade:'Obtetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 2, paciente: 'João', profissional: 'Marcos', especialidade:'Obtetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 3, paciente: 'Maria', profissional: 'Gisele', especialidade:'Obtetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 4, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obtetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 5, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obtetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 6, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obtetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 1, paciente: 'João', profissional: 'Marcos', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 2, paciente: 'João', profissional: 'Marcos', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 3, paciente: 'Maria', profissional: 'Gisele', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 4, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 5, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 6, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
     ];
   
   const Tabela = ({ dados }) => {
@@ -85,7 +85,6 @@ export function Table() {
             </Link>
           </div>
         </div>
-
         <div className={S.divTable}>
           {dados.length > 0 ? (
             <Tabela dados={dados} />

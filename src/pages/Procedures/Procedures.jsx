@@ -3,7 +3,7 @@ import { Header } from "../../components/Header/Header"
 
 import S from './styles.module.scss'
 
-export function Consults() {
+export function Procedures() {
    return(
       <>
       <div className={S.pageInitial}>

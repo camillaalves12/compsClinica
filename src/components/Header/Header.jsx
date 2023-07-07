@@ -21,11 +21,12 @@ export function Header(){
               navbarScroll
             >
               <Nav.Link as={Link} to='/initial'>Painel de Administrativo</Nav.Link>
-              <Nav.Link as={Link} to='/consults'>Consultas</Nav.Link>
+              <Nav.Link as={Link} to='/procedures'>Procedimentos</Nav.Link>
               <Nav.Link as={Link} to='/create_consult'>Criar consultas</Nav.Link>
-              <Nav.Link as={Link} to='/create_exam'>Criar exames</Nav.Link>
+              <Nav.Link as={Link} to='/create_exam'>Criar exame</Nav.Link>
               <Nav.Link as={Link} to='/register_patient'>Cadastrar paciente</Nav.Link>
               <Nav.Link as={Link} to='/search_patient'>Procurar paciente</Nav.Link>
+              <Nav.Link as={Link} to='/scheduling_consult'>Agendamento</Nav.Link>
             </Nav>
           <Nav className={S.logout}>
             <Nav.Link className={S.Username}>Olá, fulana</Nav.Link>

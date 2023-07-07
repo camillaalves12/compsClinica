@@ -2,6 +2,8 @@ import S from './styles.module.scss'
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { ResultFound } from '../ResultFound/ResultFound';
+import { ResultNotFound } from '../ResultNotFound/ResultNotFound';
 
 
 
@@ -12,7 +14,7 @@ export function SearchPatient(props){
          <div className={S.containerForm}>
          <h2 style={{ marginBottom:'1.5rem'}}>{props.title}</h2>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-               <Form.Label>Nome/CPF</Form.Label>
+               <Form.Label>Nome/CPF:</Form.Label>
                <Form.Control
                required
                className={S.input} 
@@ -44,8 +46,10 @@ export function SearchPatient(props){
          <Button style={{width:'250px', height:'38px',textAlign:'center'}}>Procurar</Button>
          </div>
          </div>
-
       </Form>
+
+      <ResultFound />
+      <ResultNotFound />
       </>
    )
 }

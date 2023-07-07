@@ -4,13 +4,19 @@ import S from './styles.module.scss'
 
 export function DashSpline() {
 
+  
    const series= [{
-      name: 'series1',
-      data: [31, 40, 28, 51, 42, 109, 100]
+      name: 'Dr. Paulo',
+      data: [3110, 2140, 1228, 1551, 1042, 709, 2810]
     }, {
-      name: 'series2',
-      data: [11, 32, 45, 32, 34, 52, 41]
-    }]
+      name: 'Dr. Miriam',
+      data: [2511, 1232, 1145, 1032, 2034, 1052, 2641]
+    }, {
+      name: 'Dr. Yasmim',
+      data: [1050, 3245, 2022, 2332, 1543, 1272, 2141]
+    }
+  
+  ]
 
     const options = {
       chart: {
@@ -25,11 +31,11 @@ export function DashSpline() {
       },
       xaxis: {
         type: 'datetime',
-        categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        categories: ["2018-09-19", "2018-09-18", "2018-09-17", "2018-09-16", "2018-09-15", "2018-09-14", "2018-09-13"]
       },
       tooltip: {
         x: {
-          format: 'dd/MM/yy HH:mm'
+          format: 'dd/MM/yy'
         },
       }
    }

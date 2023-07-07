@@ -1,16 +1,13 @@
-// import { Login } from './components/Login/Login';
-// import GlobalStyles  from './styles/global';
-// import { Card } from './components/Card/Card';
-// import { Dash } from './components/Dash/Dash';
-// import { Forms } from './components/Forms/Forms';
 
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { Initial } from './pages/Initial/Initial';
 import { CreateConsult } from './pages/CreateConsult/CreateConsult';
 import { CreateExam } from './pages/CreateExam/CreateExam';
-import { Consults } from './pages/Consults/Consults';
+import { Procedures } from './pages/Procedures/Procedures';
 import { PageRegisterPatient } from './pages/PageRegisterPatient/PageRegisterPatient';
 import { PageSearchPatient } from './pages/PageSearchPatient/PageSearchPatient';
+import { SchedulingConsult } from './pages/SchedulingConsult/SchedulingConsult';
+import { DetailsPage } from './pages/DetailsPage/DetailsPage';
 
 import './App.scss';
 
@@ -31,9 +28,11 @@ function App() {
         <Route exact path='/initial' element={<Initial/>}/>
         <Route exact path='/create_consult' element={<CreateConsult/>}/>
         <Route exact path='/create_exam' element={<CreateExam/>}/>
-        <Route exact path='/consults' element={<Consults/>}/>
+        <Route exact path='/procedures' element={<Procedures/>}/>
         <Route exact path='/register_patient' element={<PageRegisterPatient/>}/>
         <Route exact path='/search_patient' element={<PageSearchPatient/>}/>
+        <Route exact path='/scheduling_consult' element={<SchedulingConsult/>}/>
+        <Route exact path='/search_patient/details' element={<DetailsPage/>}/>
       </Routes>
     </Router>
     
@@ -42,35 +41,3 @@ function App() {
 }
 
 export default App;
-
-{/* <div>
-<GlobalStyles />
-<div className='aa'>
-  <Dash />
-</div>
-<div className='aa'>
-  <div className='cards'>
-    <Card 
-      title='Ganho Semanal'
-      money='288'
-    />
-    <Card 
-      title='Ganho Mensal'
-      money='508'
-    />
-    <Card 
-      title='Ganho Anual'
-      money='50.000'
-    />
-  </div>
-</div>
-<div className='aa'>
-<Login />
-</div>
-<div className='aa'>
-  <Table />
-</div>
-<div className='aa'>
-  <Forms />
-</div>
-</div> */}
