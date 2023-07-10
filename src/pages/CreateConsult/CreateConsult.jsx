@@ -26,6 +26,9 @@ export function CreateConsult() {
       <div className={S.pageCreateConsult}>
       <div className={S.forms}>
          <Forms
+         controlIdFirst='controlIdPacient'
+         controlIdSecond='controlIdDoctor'
+         
          title='Criar Consulta'
          procedure='Consulta:'
          placeholderProcedure='Selecione a consulta'

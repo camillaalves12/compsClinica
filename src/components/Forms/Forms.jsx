@@ -14,7 +14,7 @@ export function Forms(props) {
     <Form className={S.container}>
       <div className={S.containerForm}>
         <h2 style={{ marginBottom: '1.5rem' }}>{props.title}</h2>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3" controlId={props.controlIdFirst}>
           <Form.Label>Paciente:</Form.Label>
           <Form.Control
             className={S.input}
@@ -24,7 +24,7 @@ export function Forms(props) {
         </Form.Group>
 
         <div className={S.doctor}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId={props.controlIdSecond}>
             <Form.Label>{props.labelProfessional}</Form.Label>
             <Form.Control
               className={S.inputDoctor}
@@ -33,7 +33,7 @@ export function Forms(props) {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId={props.controlIdFThird}>
             <Form.Label>{props.procedure}</Form.Label>
             <Form.Select
               style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}

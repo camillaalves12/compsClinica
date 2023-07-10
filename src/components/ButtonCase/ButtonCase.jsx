@@ -20,19 +20,7 @@ function ButtonCase(props) {
         <Modal.Header closeButton>
           <Modal.Title> {props.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Pode prosseguir para o painel de consultas.</Modal.Body>
-        
-        {/* <Modal.Footer> */}
-          {/* <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer> */}
-
-        {/* TEM QUE FAZER UMA VALIDAÇÃO!! SE CASO OS CAMPOS ESTEJAM VAZIOS!! */}
-
+        <Modal.Body>Pode prosseguir para o painel administrativo.</Modal.Body>
       </Modal>
 
     </div>

@@ -27,15 +27,19 @@ export function Header(){
                 <NavDropdown.Item as={Link} to='/create_consult'>Criar consultas</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to='/create_exam'>Criar exame</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to='/scheduling_consult'>Agendamento</NavDropdown.Item>
-            </NavDropdown>
-              <Nav.Link as={Link} to='/register_patient'>Cadastrar paciente</Nav.Link>
-              <Nav.Link as={Link} to='/search_patient'>Procurar paciente</Nav.Link>
-            </Nav>
-          <Nav className={S.logout}>
-            <Nav.Link className={S.Username}>Olá, fulana</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              <HiOutlineLogout className={S.iconLogout}/>
-            </Nav.Link>
+              </NavDropdown>
+              <NavDropdown title="Cadastros">
+                <NavDropdown.Item  as={Link} to='/register_patient'>Cadastrar paciente</NavDropdown.Item >
+                <NavDropdown.Item as={Link} to='/register_doctor'>Cadastrar Doutor</NavDropdown.Item>
+              </NavDropdown>
+                <Nav.Link as={Link} to='/search_patient'>Procurar paciente</Nav.Link>
+              </Nav>
+
+              <Nav className={S.logout}>
+              <Nav.Link className={S.Username}>Olá, fulana</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+                <HiOutlineLogout className={S.iconLogout}/>
+              </Nav.Link>
           </Nav>
           </Navbar.Collapse>
         </Container>
