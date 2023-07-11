@@ -56,12 +56,20 @@
 
 .search {
   display: flex;
-  width: 250px;
+  width: 330px;
   align-items: center;
+  gap: 1rem;
+  align-content: center;
   cursor: pointer;
 
   .iconSearch {
     width: 2.2rem;
     height: 2.2rem;
   }
+}
+
+.search_and__date {
+  display: flex;
+  gap: 1rem;
+  align-items: center
 }

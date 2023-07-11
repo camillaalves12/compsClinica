@@ -40,8 +40,10 @@ export function DashSpline() {
       }
    }
    return(
+    <div className={S.container}>
       <div className={S.dashSpline}>
          <ReactApexChart options={options} series={series}  type='area'/>
       </div>
+    </div>
    )
    }

@@ -10,10 +10,10 @@ export function Table() {
    const dados = [
       { index: 1, paciente: 'João', profissional: 'Marcos', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
       { index: 2, paciente: 'João', profissional: 'Marcos', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      // { index: 3, paciente: 'Maria', profissional: 'Gisele', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      // { index: 4, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      // { index: 5, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      // { index: 6, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 3, paciente: 'Maria', profissional: 'Gisele', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 4, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+      { index: 5, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
+
     ];
   
   const Tabela = ({ dados }) => {
@@ -62,16 +62,38 @@ export function Table() {
     <>
       <div className={S.container}>
         <div className={S.container_search_and_create}>
-          <Form className={S.search}>
-            <Form.Control
-              type="search"
-              placeholder="Pesquisar"
-              className="me-2"
-              aria-label="Search"
-              style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
-            />
-            <BiSearch className={S.iconSearch} />
-          </Form>
+          <div className={S.search_and__date}>
+            <Form>
+              <Form.Control
+                placeholder="Pesquisar por período"
+                className={S.inputDate}
+                aria-label="Search"
+                style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
+                type="date"
+                />
+            </Form>
+            <Form>
+              <Form.Control
+                placeholder="Pesquisar por período"
+                className={S.inputDate}
+                aria-label="Search"
+                style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
+                type="date"
+              />
+            </Form>
+
+              <BiSearch className={S.iconSearch} />
+            <Form className={S.search}>
+              <Form.Control
+                type="search"
+                placeholder="Pesquisar"
+                className="me-2"
+                aria-label="Search"
+                style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
+              />
+              <BiSearch className={S.iconSearch} />
+            </Form>
+        </div>
           <div>
             <Link to="/create_consult">
               <Button variant="primary" className={S.input}>
