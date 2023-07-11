@@ -5,10 +5,18 @@ import { Card } from "../../components/Card/Card"
 import S from './styles.module.scss'
 
 export function Procedures() {
+
+   const [cardsHabilitados, setCardsHabilitados] = useState(false);
+
+   const habilitarCards = () => {
+     setCardsHabilitados(true);
+   };
+   
    return(
       <>
       <Header />
       <div className={S.pageInitial}>
+         <div className={S.divCards} id='cardsContainer'>
             <div className={S.cards}>
                   <Card
                   title='Saldo Diário'
@@ -23,11 +31,13 @@ export function Procedures() {
                   money= '700.250'
                   />
             </div>
+         </div>
 
          <div className={S.table}>
             <Table />
          </div>
       </div>
       </>
+
    )
 }

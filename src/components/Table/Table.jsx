@@ -81,7 +81,6 @@ export function Table() {
                 type="date"
               />
             </Form>
-
               <BiSearch className={S.iconSearch} />
             <Form className={S.search}>
               <Form.Control
@@ -91,7 +90,7 @@ export function Table() {
                 aria-label="Search"
                 style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
               />
-              <BiSearch className={S.iconSearch} />
+              <BiSearch className={S.iconSearch} id='habilitarBtn'/>
             </Form>
         </div>
           <div>
