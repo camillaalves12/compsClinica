@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 import S from './styles.module.scss';
@@ -6,7 +5,8 @@ import S from './styles.module.scss';
 export function DashPie() {
   
   const series = [24.05, 73, 41, 50, 95];
-  const labels = series.map((value, index) => `Dra. ${index + 1} - <b>R$ ${value}</b>`);
+  const names = ['Maria', 'João', 'Ana', 'Camilla', 'Barbara']
+  const labels = series.map((value, index) => `Dr. ${names[index]} - <b>R$ ${value}</b>`);
   
   const options = {
     labels: labels,

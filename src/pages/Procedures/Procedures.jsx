@@ -6,12 +6,6 @@ import S from './styles.module.scss'
 
 export function Procedures() {
 
-   const [cardsHabilitados, setCardsHabilitados] = useState(false);
-
-   const habilitarCards = () => {
-     setCardsHabilitados(true);
-   };
-   
    return(
       <>
       <Header />

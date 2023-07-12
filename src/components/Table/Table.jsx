@@ -8,12 +8,11 @@ import S from './styles.module.scss';
 export function Table() {
 
    const dados = [
-      { index: 1, paciente: 'João', profissional: 'Marcos', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 2, paciente: 'João', profissional: 'Marcos', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 3, paciente: 'Maria', profissional: 'Gisele', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 4, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-      { index: 5, paciente: 'Pedro', profissional: 'Antonio', especialidade:'Obstetra', valor: 150, forma_de_pagamento: 'pix', data:23 },
-
+      { index: 1, patient: 'João', professional: 'Marcos', specialty:'Obstetra', value: 100, form_of_payment: 'pix', date:23 },
+      { index: 2, patient: 'João', professional: 'Marcos', specialty:'Cardíaco', value: 150, form_of_payment: 'pix', date:23 },
+      { index: 3, patient: 'Maria', professional: 'Gisele', specialty:'Geral', value: 150, form_of_payment: 'pix', date:23 },
+      { index: 4, patient: 'Pedro', professional: 'LAB. NATLAB', specialty:'Exames Laboratoriais', value: 150, form_of_payment: 'pix', date:23 },
+      { index: 5, patient: 'Pedro', professional: 'Antonio', specialty:'Obstetra', value: 150, form_of_payment: 'pix', date:23 },
     ];
   
   const Tabela = ({ dados }) => {
@@ -32,12 +31,12 @@ export function Table() {
         <tbody>
           {dados.map((item, index) => (
             <tr key={index}>
-              <td>{item.paciente}</td>
-              <td>{item.profissional}</td>
-              <td>{item.especialidade}</td>
-              <td>{item.valor}</td>
-              <td>{item.forma_de_pagamento}</td>
-              <td>{item.data}</td>
+              <td>{item.patient}</td>
+              <td>{item.professional}</td>
+              <td>{item.specialty}</td>
+              <td>{`R$ ${item.value}`}</td>
+              <td>{item.form_of_payment}</td>
+              <td>{item.date}</td>
             </tr>
           ))}
         </tbody>
@@ -48,11 +47,11 @@ export function Table() {
   Tabela.propTypes = {
     dados: PropTypes.arrayOf(
       PropTypes.shape({
-        paciente: PropTypes.string.isRequired,
-        profissional: PropTypes.string.isRequired,
-        especialidade: PropTypes.string.isRequired,
-        valor: PropTypes.number.isRequired,
-        data: PropTypes.string.isRequired,
+        patient: PropTypes.string.isRequired,
+        professional: PropTypes.string.isRequired,
+        specialty: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+        date: PropTypes.string.isRequired,
       })
     ).isRequired,
   };
@@ -124,12 +123,12 @@ export function Table() {
             <tbody>
               {dados.map((item, index) => (
                 <tr key={index}>
-                  <td>{item.paciente}</td>
-                  <td>{item.profissional}</td>
-                  <td>{item.especialidade}</td>
-                  <td>{item.valor}</td>
-                  <td>{item.forma_de_pagamento}</td>
-                  <td>{item.data}</td>
+                  <td>{item.patient}</td>
+                  <td>{item.professional}</td>
+                  <td>{item.specialty}</td>
+                  <td>{`R$ ${item.value}`}</td>
+                  <td>{item.form_of_payment}</td>
+                  <td>{item.date}</td>
                 </tr>
               ))}
             </tbody>

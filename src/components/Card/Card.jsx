@@ -1,5 +1,4 @@
 import { TbCurrencyReal } from 'react-icons/tb';
-
 import S from './styles.module.scss';
 
 export function Card({title, money}){
@@ -16,5 +15,4 @@ export function Card({title, money}){
             </div>
         </div>
     )
-
 }
