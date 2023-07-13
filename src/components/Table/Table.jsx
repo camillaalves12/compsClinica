@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { BiSearch } from 'react-icons/bi';
@@ -11,7 +10,7 @@ export function Table() {
       { index: 1, patient: 'João', professional: 'Marcos', specialty:'Obstetra', value: 100, form_of_payment: 'pix', date:23 },
       { index: 2, patient: 'João', professional: 'Marcos', specialty:'Cardíaco', value: 150, form_of_payment: 'pix', date:23 },
       { index: 3, patient: 'Maria', professional: 'Gisele', specialty:'Geral', value: 150, form_of_payment: 'pix', date:23 },
-      { index: 4, patient: 'Pedro', professional: 'LAB. NATLAB', specialty:'Exames Laboratoriais', value: 150, form_of_payment: 'pix', date:23 },
+      { index: 4, patient: 'Pedro', professional: 'LAB. NATLAB', specialty:'Exame', value: 150, form_of_payment: 'pix', date:23 },
       { index: 5, patient: 'Pedro', professional: 'Antonio', specialty:'Obstetra', value: 150, form_of_payment: 'pix', date:23 },
     ];
   
@@ -65,7 +64,6 @@ export function Table() {
             <Form>
               <Form.Control
                 placeholder="Pesquisar por período"
-                className={S.inputDate}
                 aria-label="Search"
                 style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
                 type="date"
@@ -74,7 +72,6 @@ export function Table() {
             <Form>
               <Form.Control
                 placeholder="Pesquisar por período"
-                className={S.inputDate}
                 aria-label="Search"
                 style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
                 type="date"
@@ -90,11 +87,11 @@ export function Table() {
                 style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
               />
               <BiSearch className={S.iconSearch} id='habilitarBtn'/>
-            </Form>
+          </Form>
         </div>
           <div>
             <Link to="/create_consult">
-              <Button variant="primary" className={S.input}>
+              <Button variant="primary">
                 + Criar nova consulta
               </Button>
             </Link>

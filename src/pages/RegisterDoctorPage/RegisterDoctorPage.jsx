@@ -1,4 +1,3 @@
-import S from './styles.module.scss'
 import {RegisterDoctor} from '../../components/RegisterDoctor/RegisterDoctor'
 import { Header } from '../../components/Header/Header'
 

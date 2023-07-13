@@ -17,7 +17,6 @@ export function Forms(props) {
         <Form.Group className="mb-3" controlId={props.controlIdFirst}>
           <Form.Label>Paciente:</Form.Label>
           <Form.Control
-            className={S.input}
             type="text"
             style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
           />

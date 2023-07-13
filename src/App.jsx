@@ -1,13 +1,13 @@
 
 import { LoginPage } from './pages/LoginPage/LoginPage';
-import { Initial } from './pages/Initial/Initial';
-import { CreateConsult } from './pages/CreateConsult/CreateConsult';
-import { CreateExam } from './pages/CreateExam/CreateExam';
-import { Procedures } from './pages/Procedures/Procedures';
-import { PageRegisterPatient } from './pages/PageRegisterPatient/PageRegisterPatient';
+import { InitialPage } from './pages/InitialPage/InitialPage';
+import { CreateConsultPage } from './pages/CreateConsultPage/CreateConsultPage';
+import { CreateExamPage } from './pages/CreateExamPage/CreateExamPage';
+import { ProceduresPage } from './pages/ProceduresPage/ProceduresPage';
+import { RegisterPatientPage } from './pages/RegisterPatientPage/RegisterPatientPage';
 import { RegisterDoctorPage } from './pages/RegisterDoctorPage/RegisterDoctorPage';
-import { PageSearchPatient } from './pages/PageSearchPatient/PageSearchPatient';
-import { SchedulingConsult } from './pages/SchedulingConsult/SchedulingConsult';
+import { SearchPatientPage } from './pages/SearchPatientPage/SearchPatientPage';
+import { SchedulingConsultPage } from './pages/SchedulingConsultPage/SchedulingConsultPage';
 import { DetailsPage } from './pages/DetailsPage/DetailsPage';
 
 import './App.scss';
@@ -26,14 +26,14 @@ function App() {
     <Router>
       <Routes>
         <Route exact path='/' element={<LoginPage/>}/>
-        <Route exact path='/initial' element={<Initial/>}/>
-        <Route exact path='/create_consult' element={<CreateConsult/>}/>
-        <Route exact path='/create_exam' element={<CreateExam/>}/>
-        <Route exact path='/procedures' element={<Procedures/>}/>
-        <Route exact path='/register_patient' element={<PageRegisterPatient/>}/>
+        <Route exact path='/initial' element={<InitialPage/>}/>
+        <Route exact path='/create_consult' element={<CreateConsultPage/>}/>
+        <Route exact path='/create_exam' element={<CreateExamPage/>}/>
+        <Route exact path='/procedures' element={<ProceduresPage/>}/>
+        <Route exact path='/register_patient' element={<RegisterPatientPage/>}/>
         <Route exact path='/register_doctor' element={<RegisterDoctorPage/>}/>
-        <Route exact path='/search_patient' element={<PageSearchPatient/>}/>
-        <Route exact path='/scheduling_consult' element={<SchedulingConsult/>}/>
+        <Route exact path='/search_patient' element={<SearchPatientPage/>}/>
+        <Route exact path='/scheduling_consult' element={<SchedulingConsultPage/>}/>
         <Route exact path='/search_patient/details' element={<DetailsPage/>}/>
       </Routes>
     </Router>

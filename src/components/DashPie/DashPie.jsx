@@ -41,9 +41,9 @@ export function DashPie() {
 
   return (
     <div className={S.container}>
-    <div id="chart" className={S.dashPie}>
-      <ReactApexChart options={options} series={series} type="polarArea" />
-    </div>
+      <div id="chart" className={S.dashPie}>
+        <ReactApexChart options={options} series={series} type="polarArea" />
+      </div>
     </div>
   );
 }

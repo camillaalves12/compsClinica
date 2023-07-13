@@ -4,8 +4,7 @@ import S from './styles.module.scss'
 
 export function DashSpline() {
 
-  
-   const series= [{
+     const series= [{
       name: 'Dr. Paulo',
       data: [3110, 2140, 1228, 1551, 1042, 709, 2810]
     }, {

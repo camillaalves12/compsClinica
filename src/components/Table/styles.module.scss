@@ -3,12 +3,40 @@
   flex-direction: column;
   margin: 0 auto;
   width: 168vh;
-  
-  .divTable {
-    overflow: auto;
-    height: 25rem;
-    overflow-x: hidden;
+
+  .container_search_and_create {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .search_and__date {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .iconSearch {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
+
+      .search {
+        display: flex;
+        width: 330px;
+        align-items: center;
+        gap: 1rem;
+        align-content: center;
+        cursor: pointer;
+
+      }
+
+    }
+    
   }
+
+.divTable {
+  overflow: auto;
+  height: 25rem;
+  overflow-x: hidden;
 
   .table {
     width: 170vh;
@@ -51,28 +79,4 @@
   }
 }
 
-.container_search_and_create {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
-.search {
-  display: flex;
-  width: 330px;
-  align-items: center;
-  gap: 1rem;
-  align-content: center;
-  cursor: pointer;
-
-  .iconSearch {
-    width: 2.2rem;
-    height: 2.2rem;
-  }
-}
-
-.search_and__date {
-  display: flex;
-  gap: 1rem;
-  align-items: center
 }

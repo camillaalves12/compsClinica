@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { BiInfoCircle } from "react-icons/bi";
-
 import S from './styles.module.scss'; 
 
 export function ResultNotFound() {

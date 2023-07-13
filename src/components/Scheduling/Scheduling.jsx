@@ -3,7 +3,6 @@ import {Header} from '../../components/Header/Header'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-
 export function Scheduling(props) {
    return(
       <>
@@ -15,7 +14,6 @@ export function Scheduling(props) {
                <Form.Label>Nome/CPF:</Form.Label>
                <Form.Control
                required
-               className={S.input} 
                type="text" 
                style={{outline:'none', boxShadow:'none', border:'1px solid #cdcdcd' }} />
             </Form.Group>

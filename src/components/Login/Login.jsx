@@ -5,7 +5,6 @@ import S from './styles.module.scss';
 import { GiPadlock } from 'react-icons/gi';
 
 export function Login() {
-
   return (
   <div className={S.container}>
     <section className={S.section}>
@@ -21,7 +20,7 @@ export function Login() {
       <FloatingLabel  className={S.input} controlId="floatingPassword" label="Senha">
         <Form.Control  type="password" placeholder="password" style={{height:'50px', outline:'none', boxShadow:'none', border:'none' }}/>
       </FloatingLabel>
-      <Button variant="primary" className={S.input}>Entrar</Button>
+      <Button variant="primary" className={S.btn}>Entrar</Button>
 
     </section>
   </div>

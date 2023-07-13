@@ -77,12 +77,12 @@ export function Details() {
                 </Form>
                 <div>
                   <Link to="/create_consult">
-                    <Button variant="primary" className={S.input}>
+                    <Button variant="primary">
                       + Criar nova consulta
                     </Button>
                   </Link>
                   <Link to="/create_exam">
-                    <Button variant="primary" className={S.input} style={{ margin: '5px', background: '#fff', color: '#0d6efd' }}>
+                    <Button variant="primary" style={{ margin: '5px', background: '#fff', color: '#0d6efd' }}>
                       + Criar novo exame
                     </Button>
                   </Link>
