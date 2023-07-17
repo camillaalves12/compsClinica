@@ -94,30 +94,30 @@ export function Details() {
                 ) : (
 
                   <table className={S.table}>
-                  <thead>
-                    <tr>
-                      <th className={S.th_thead}>Paciente</th>
-                      <th className={S.th_thead}>Proficional</th>
-                      <th className={S.th_thead}>Grupo de procedimento</th>
-                      <th className={S.th_thead}>Procedimento</th>
-                      <th className={S.th_thead}>Valor</th>
-                      <th className={S.th_thead}>Forma de pagamento</th>
-                      <th className={S.th_thead}>Dara</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {dados.map((item, index) => (
-                      <tr key={index}>
-                        <td>{item.patient}</td>
-                        <td>{item.professional}</td>
-                        <td>{item.procedure_group}</td>
-                        <td>{item.procedures}</td>
-                        <td>{item.value}</td>
-                        <td>{item.form_of_payment}</td>
-                        <td>{item.date}</td>
+                    <thead>
+                      <tr>
+                        <th className={S.th_thead}>Paciente</th>
+                        <th className={S.th_thead}>Profissional</th>
+                        <th className={S.th_thead}>Grupo de procedimento</th>
+                        <th className={S.th_thead}>Procedimento</th>
+                        <th className={S.th_thead}>Valor</th>
+                        <th className={S.th_thead}>Forma de pagamento</th>
+                        <th className={S.th_thead}>Data</th>
                       </tr>
-                    ))}
-                  </tbody>
+                    </thead>
+                    <tbody>
+                      {dados.map((item, index) => (
+                        <tr key={index}>
+                          <td>{item.patient}</td>
+                          <td>{item.professional}</td>
+                          <td>{item.procedure_group}</td>
+                          <td>{item.procedures}</td>
+                          <td>{`R$ ${item.value}`}</td>
+                          <td>{item.form_of_payment}</td>
+                          <td>{item.date}</td>
+                        </tr>
+                      ))}
+                    </tbody>
                 </table>
                 )}
               </div>

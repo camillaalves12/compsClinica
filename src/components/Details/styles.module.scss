@@ -40,6 +40,10 @@
         position: sticky; /* Adicione posição sticky ao cabeçalho */
         top: -1px; /* Defina o deslocamento negativo para ficar imediatamente acima da div.container */
         z-index: 1; /* Ajuste o valor de z-index para garantir que o cabeçalho fique acima do conteúdo */
+        
+        :hover{
+          background-color: #cdcdcd !important;
+        }
       }
 
       .th_thead {

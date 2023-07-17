@@ -8,10 +8,8 @@ export function RegisterDoctor(props) {
             <div className={S.containerForm}>
                 <h2 style={{ marginBottom: '1.5rem' }}>{props.title}</h2>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Nome completo:</Form.Label>
+                    <Form.Label>Nome:</Form.Label>
                     <Form.Control
-                        required
-                        className={S.input}
                         type="text"
                         style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }} />
                 </Form.Group>
@@ -19,8 +17,6 @@ export function RegisterDoctor(props) {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Especialidade:</Form.Label>
                     <Form.Control
-                        required
-                        className={S.inputDoctorEspc}
                         style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd', marginBottom: '1rem' }} />
                 </Form.Group>
 

@@ -5,7 +5,6 @@ import ButtonCase from '../ButtonCase/ButtonCase';
 
 export function Forms(props) {
   const [procedureSelecionado, setProcedureSelecionado] = useState("");
-
   const handleProcedureChange = (e) => {
     setProcedureSelecionado(e.target.value);
   };
@@ -24,7 +23,7 @@ export function Forms(props) {
 
         <div className={S.doctor}>
           <Form.Group className="mb-3" controlId={props.controlIdSecond}>
-            <Form.Label>{props.labelProfessional}</Form.Label>
+            <Form.Label>Profissional:</Form.Label>
             <Form.Control
               className={S.inputDoctor}
               type="text"
@@ -33,7 +32,7 @@ export function Forms(props) {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId={props.controlIdFThird}>
-            <Form.Label>{props.procedure}</Form.Label>
+            <Form.Label>{props.labelProcedure}</Form.Label>
             <Form.Select
               style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}
               value={procedureSelecionado}
@@ -52,7 +51,7 @@ export function Forms(props) {
         </div>
 
         <div className={S.money}>
-          <Form.Group className="mb-3" controlId="formBasicmedico">
+          <Form.Group className="mb-3" controlId={props.controlIdfourth}>
             <Form.Label>Valor:</Form.Label>
             <Form.Control
               type="medico"
@@ -61,7 +60,7 @@ export function Forms(props) {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicmedico">
+          <Form.Group className="mb-3" controlId={props.controlIdControlIdFifth}>
             <Form.Label>Forma de Pagamento:</Form.Label>
             <Form.Select style={{ outline: 'none', boxShadow: 'none', border: '1px solid #cdcdcd' }}>
               <option>Selecione a forma de pagamento</option>
@@ -72,6 +71,7 @@ export function Forms(props) {
               <option value="5">Outro</option>
             </Form.Select>
           </Form.Group>
+
         </div>
         <ButtonCase nameBtn="Cadastrar" title="Consulta Cadastrada" className={S.btnCase} />
       </div>
